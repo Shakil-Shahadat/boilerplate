@@ -74,23 +74,23 @@
 		txt += '</title>\n';
 
 		// Set Favicon
-		if ( document.querySelector( '.siteFaviconType' ).value === 'SVG' )
+		if ( document.querySelector( '.siteFaviconType' ).value !== 'None' )
 		{
 			txt += '\t<link rel="icon" href="';
 			txt += document.querySelector( '.siteFaviconLink' ).value;
-			txt += '" type="image/svg+xml">\n';
-		}
-		else if ( document.querySelector( '.siteFaviconType' ).value === 'Icon' )
-		{
-			txt += '\t<link rel="icon" href="';
-			txt += document.querySelector( '.siteFaviconLink' ).value;
-			txt += '" type="image/icon">\n';
-		}
-		else if ( document.querySelector( '.siteFaviconType' ).value === 'PNG' )
-		{
-			txt += '\t<link rel="icon" href="';
-			txt += document.querySelector( '.siteFaviconLink' ).value;
-			txt += '" type="image/png">\n';
+
+			if ( document.querySelector( '.siteFaviconType' ).value === 'SVG' )
+			{
+				txt += '" type="image/svg+xml">\n';
+			}
+			else if ( document.querySelector( '.siteFaviconType' ).value === 'Icon' )
+			{
+				txt += '" type="image/icon">\n';
+			}
+			else if ( document.querySelector( '.siteFaviconType' ).value === 'PNG' )
+			{
+				txt += '" type="image/png">\n';
+			}
 		}
 
 		// Set Style Sheet Element
