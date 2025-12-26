@@ -85,6 +85,18 @@
 		txt += '\t<div class="container">\n\n\t\t\n\n';
 		txt += '\t</div><!-- .container -->\n\n';
 
+		// Set JavaScript Element
+		if ( document.querySelector( '.siteJavaScriptType' ).value === 'External' )
+		{
+			txt += '<script src="';
+			txt += document.querySelector( '.siteJavaScriptLink' ).value;
+			txt += '"></script\>\n';
+		}
+		else if ( document.querySelector( '.siteJavaScriptType' ).value === 'Internal' )
+		{
+			txt += '<script>\n\n\t\'use strict\';\n\n\t\n\n</script\>\n';
+		}
+
 		document.querySelector( 'textarea' ).value = txt;
 	}
 </script>
