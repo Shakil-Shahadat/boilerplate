@@ -102,6 +102,23 @@
 
 		document.querySelector( 'textarea' ).value = txt;
 	}
+
+	function disableStyleSheetLink()
+	{
+		if ( document.querySelector( '.siteStyleSheet' ).value === 'External' )
+		{
+			document.querySelector( '.siteStyleSheetLink' ).disabled = false;
+		}
+		else if ( document.querySelector( '.siteStyleSheet' ).value === 'Internal' )
+		{
+			document.querySelector( '.siteStyleSheetLink' ).disabled = true;
+		}
+		else if ( document.querySelector( '.siteStyleSheet' ).value === 'None' )
+		{
+			document.querySelector( '.siteStyleSheetLink' ).disabled = true;
+		}
+	}
+
 </script>
 </body>
 </html>
