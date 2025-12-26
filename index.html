@@ -119,6 +119,22 @@
 		}
 	}
 
+	function disableJavaScriptLink()
+	{
+		if ( document.querySelector( '.siteJavaScriptType' ).value === 'External' )
+		{
+			document.querySelector( '.siteJavaScriptLink' ).disabled = false;
+		}
+		else if ( document.querySelector( '.siteJavaScriptType' ).value === 'Internal' )
+		{
+			document.querySelector( '.siteJavaScriptLink' ).disabled = true;
+		}
+		else if ( document.querySelector( '.siteJavaScriptType' ).value === 'None' )
+		{
+			document.querySelector( '.siteJavaScriptLink' ).disabled = true;
+		}
+	}
+
 </script>
 </body>
 </html>
