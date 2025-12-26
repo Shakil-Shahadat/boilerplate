@@ -34,6 +34,17 @@
 			<input type="text" class="form-control siteStyleSheetLink" value="src/style.css">
 		</div>
 
+		<div class="input-group mb-4">
+			<span class="input-group-text">JavaScript Type</span>
+			<select class="form-select siteJavaScriptType" onchange="disableJavaScriptLink()">
+				<option value="External">External File</option>
+				<option value="Internal">Script Tag</option>
+				<option value="None">None</option>
+			</select>
+			<span class="input-group-text">Script Location</span>
+			<input type="text" class="form-control siteJavaScriptLink" value="src/script.js">
+		</div>
+
 		<button class="btn btn-outline-primary mb-4" onclick="makeBP()">
 			Make
 		</button>
