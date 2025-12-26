@@ -23,6 +23,17 @@
 			</select>
 		</div>
 
+		<div class="input-group mb-4">
+			<span class="input-group-text">Style Sheet Type</span>
+			<select class="form-select siteStyleSheet" onchange="disableStyleSheetLink()">
+				<option value="External">External File</option>
+				<option value="Internal">Style Tag</option>
+				<option value="None">None</option>
+			</select>
+			<span class="input-group-text">Style Sheet Location</span>
+			<input type="text" class="form-control siteStyleSheetLink" value="src/style.css">
+		</div>
+
 		<button class="btn btn-outline-primary mb-4" onclick="makeBP()">
 			Make
 		</button>
