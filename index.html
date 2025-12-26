@@ -64,6 +64,10 @@
 		txt += '<head>\n';
 		txt += '\t<meta charset="utf-8">\n';
 		txt += '\t<meta name="viewport" content="width=device-width, initial-scale=1">\n';
+		txt += '\t<title>';
+		txt += document.querySelector( '.siteTitle' ).value;
+		txt += '</title>\n';
+
 		document.querySelector( 'textarea' ).value = txt;
 	}
 </script>
