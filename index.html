@@ -68,6 +68,18 @@
 		txt += document.querySelector( '.siteTitle' ).value;
 		txt += '</title>\n';
 
+		// Set Style Sheet Element
+		if ( document.querySelector( '.siteStyleSheet' ).value === 'External' )
+		{
+			txt += '\t<link rel="stylesheet" href="';
+			txt += document.querySelector( '.siteStyleSheetLink' ).value;
+			txt += '">\n';
+		}
+		else if ( document.querySelector( '.siteStyleSheet' ).value === 'Internal' )
+		{
+			txt += '\t<style>\n\t</style>\n';
+		}
+
 		document.querySelector( 'textarea' ).value = txt;
 	}
 </script>
