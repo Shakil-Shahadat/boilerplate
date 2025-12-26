@@ -128,6 +128,29 @@
 		document.querySelector( 'textarea' ).value = txt;
 	}
 
+	function disableFaviconLink()
+	{
+		if ( document.querySelector( '.siteFaviconType' ).value === 'SVG' )
+		{
+			document.querySelector( '.siteFaviconLink' ).disabled = false;
+			document.querySelector( '.siteFaviconLink' ).value = 'src/favicon.svg';
+		}
+		else if ( document.querySelector( '.siteFaviconType' ).value === 'Icon' )
+		{
+			document.querySelector( '.siteFaviconLink' ).disabled = false;
+			document.querySelector( '.siteFaviconLink' ).value = 'src/favicon.ico';
+		}
+		else if ( document.querySelector( '.siteFaviconType' ).value === 'PNG' )
+		{
+			document.querySelector( '.siteFaviconLink' ).disabled = false;
+			document.querySelector( '.siteFaviconLink' ).value = 'src/favicon.png';
+		}
+		else if ( document.querySelector( '.siteFaviconType' ).value === 'None' )
+		{
+			document.querySelector( '.siteFaviconLink' ).disabled = true;
+		}
+	}
+
 	function disableStyleSheetLink()
 	{
 		if ( document.querySelector( '.siteStyleSheet' ).value === 'External' )
