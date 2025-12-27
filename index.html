@@ -151,6 +151,18 @@
 		document.querySelector( 'textarea' ).value = txt;
 	}
 
+	function disablePopperCheckbox()
+	{
+		if ( document.querySelector( '.siteBootstrapJS' ).value === 'Bundle' )
+		{
+			document.querySelector( '.siteBootstrapPopper' ).disabled = 'disabled';
+		}
+		else
+		{
+			document.querySelector( '.siteBootstrapPopper' ).disabled = '';
+		}
+	}
+
 	function disableFaviconLink()
 	{
 		if ( document.querySelector( '.siteFaviconType' ).value === 'SVG' )
