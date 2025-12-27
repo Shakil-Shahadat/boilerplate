@@ -133,6 +133,16 @@
 		txt += '\t<div class="container">\n\n\t\t\n\n';
 		txt += '\t</div><!-- .container -->\n\n';
 
+		// Set Bootstrap JS
+		if ( document.querySelector( '.siteBootstrapJS' ).value === 'Bundle' )
+		{
+			txt += '<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"><\/script>\n';
+		}
+		else if ( document.querySelector( '.siteBootstrapJS' ).value === 'Lite' )
+		{
+			txt += '<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"><\/script>\n';
+		}
+
 		// Set JavaScript Element
 		if ( document.querySelector( '.siteJavaScriptType' ).value === 'External' )
 		{
