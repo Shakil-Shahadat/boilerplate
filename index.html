@@ -171,6 +171,11 @@
 		document.querySelector( 'textarea' ).value = txt;
 	}
 
+	function copyBP()
+	{
+		navigator.clipboard.writeText( document.querySelector( 'textarea' ).value );
+	}
+
 	function disablePopperCheckbox()
 	{
 		if ( document.querySelector( '.siteBootstrapJS' ).value === 'Bundle' )
