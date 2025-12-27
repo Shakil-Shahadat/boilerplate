@@ -22,8 +22,14 @@
 				<input class="form-check-input mt-0 siteBootstrapCSS" type="checkbox">
 			</div>
 			<span class="input-group-text">Bootstrap JS</span>
+			<select class="form-select siteBootstrapJS" onchange="disablePopperCheckbox()">
+				<option value="Bundle">Bundle</option>
+				<option value="Lite">Lite</option>
+				<option value="None">None</option>
+			</select>
+			<span class="input-group-text">Popper</span>
 			<div class="input-group-text">
-				<input class="form-check-input mt-0 siteBootstrapJS" type="checkbox">
+				<input class="form-check-input mt-0 siteBootstrapPopper" type="checkbox" disabled>
 			</div>
 		</div>
 
