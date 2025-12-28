@@ -46,8 +46,8 @@
 		</div>
 
 		<div class="input-group mb-4">
-			<span class="input-group-text">Style Sheet Type</span>
-			<select class="form-select siteStyleSheet" onchange="disableStyleSheetLink()">
+			<label class="input-group-text" for="siteStyleSheet">Style Sheet Type</label>
+			<select class="form-select siteStyleSheet" id="siteStyleSheet" onchange="disableStyleSheetLink()">
 				<option value="External">External File</option>
 				<option value="Internal">Style Tag</option>
 				<option value="None">None</option>
