@@ -37,6 +37,7 @@
 				<option value="quartz">Quartz</option>
 				<option value="sandstone">Sandstone</option>
 				<option value="simplex">Simplex</option>
+				<option value="sketchy">Sketchy</option>
 				<option value="None">None</option>
 			</select>
 			<label class="input-group-text" for="siteBootstrapJS">Bootstrap JS</label>
@@ -184,6 +185,10 @@
 		else if ( document.querySelector( '.siteBootstrapCSS' ).value === 'simplex' )
 		{
 			txt += '\t<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/simplex/bootstrap.min.css">\n';
+		}
+		else if ( document.querySelector( '.siteBootstrapCSS' ).value === 'sketchy' )
+		{
+			txt += '\t<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/sketchy/bootstrap.min.css">\n';
 		}
 
 		// Set Favicon
