@@ -29,6 +29,7 @@
 				<option value="journal">Journal</option>
 				<option value="litera">Litera</option>
 				<option value="lumen">Lumen</option>
+				<option value="lux">Lux</option>
 				<option value="None">None</option>
 			</select>
 			<label class="input-group-text" for="siteBootstrapJS">Bootstrap JS</label>
@@ -144,6 +145,10 @@
 		else if ( document.querySelector( '.siteBootstrapCSS' ).value === 'lumen' )
 		{
 			txt += '\t<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/lumen/bootstrap.min.css">\n';
+		}
+		else if ( document.querySelector( '.siteBootstrapCSS' ).value === 'lux' )
+		{
+			txt += '\t<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/lux/bootstrap.min.css">\n';
 		}
 
 		// Set Favicon
