@@ -25,6 +25,7 @@
 				<option value="cosmo">Cosmo</option>
 				<option value="cyborg">Cyborg</option>
 				<option value="darkly">Darkly</option>
+				<option value="flatly">Flatly</option>
 				<option value="None">None</option>
 			</select>
 			<label class="input-group-text" for="siteBootstrapJS">Bootstrap JS</label>
@@ -124,6 +125,10 @@
 		else if ( document.querySelector( '.siteBootstrapCSS' ).value === 'darkly' )
 		{
 			txt += '\t<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/darkly/bootstrap.min.css">\n';
+		}
+		else if ( document.querySelector( '.siteBootstrapCSS' ).value === 'flatly' )
+		{
+			txt += '\t<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/flatly/bootstrap.min.css">\n';
 		}
 
 		// Set Favicon
