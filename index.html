@@ -18,9 +18,11 @@
 
 		<div class="input-group mb-4">
 			<label class="input-group-text" for="siteBootstrapCSS">Bootstrap CSS</label>
-			<div class="input-group-text">
-				<input class="form-check-input mt-0 siteBootstrapCSS" id="siteBootstrapCSS" type="checkbox">
-			</div>
+			<select class="form-select siteBootstrapCSS" id="siteBootstrapCSS">
+				<option value="Original">Original</option>
+				<option value="Cerulean">Cerulean</option>
+				<option value="None">None</option>
+			</select>
 			<label class="input-group-text" for="siteBootstrapJS">Bootstrap JS</label>
 			<select class="form-select siteBootstrapJS" id="siteBootstrapJS" onchange="disablePopperCheckbox()">
 				<option value="Bundle">Bundle</option>
