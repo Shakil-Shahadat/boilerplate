@@ -45,6 +45,7 @@
 				<option value="superhero">Superhero</option>
 				<option value="united">United</option>
 				<option value="vapor">Vapor</option>
+				<option value="yeti">Yeti</option>
 			</select>
 			<label class="input-group-text" for="siteBootstrapJS">Bootstrap JS</label>
 			<select class="form-select siteBootstrapJS" id="siteBootstrapJS" onchange="disablePopperCheckbox()">
@@ -219,6 +220,10 @@
 		else if ( document.querySelector( '.siteBootstrapCSS' ).value === 'vapor' )
 		{
 			txt += '\t<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/vapor/bootstrap.min.css">\n';
+		}
+		else if ( document.querySelector( '.siteBootstrapCSS' ).value === 'yeti' )
+		{
+			txt += '\t<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/yeti/bootstrap.min.css">\n';
 		}
 
 		// Set Favicon
