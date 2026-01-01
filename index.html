@@ -43,6 +43,7 @@
 				<option value="solar">Solar</option>
 				<option value="spacelab">Spacelab</option>
 				<option value="superhero">Superhero</option>
+				<option value="united">United</option>
 			</select>
 			<label class="input-group-text" for="siteBootstrapJS">Bootstrap JS</label>
 			<select class="form-select siteBootstrapJS" id="siteBootstrapJS" onchange="disablePopperCheckbox()">
@@ -209,6 +210,10 @@
 		else if ( document.querySelector( '.siteBootstrapCSS' ).value === 'superhero' )
 		{
 			txt += '\t<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/superhero/bootstrap.min.css">\n';
+		}
+		else if ( document.querySelector( '.siteBootstrapCSS' ).value === 'united' )
+		{
+			txt += '\t<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/united/bootstrap.min.css">\n';
 		}
 
 		// Set Favicon
