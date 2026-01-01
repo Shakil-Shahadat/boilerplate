@@ -40,6 +40,7 @@
 				<option value="simplex">Simplex</option>
 				<option value="sketchy">Sketchy</option>
 				<option value="slate">Slate</option>
+				<option value="solar">Solar</option>
 			</select>
 			<label class="input-group-text" for="siteBootstrapJS">Bootstrap JS</label>
 			<select class="form-select siteBootstrapJS" id="siteBootstrapJS" onchange="disablePopperCheckbox()">
@@ -194,6 +195,10 @@
 		else if ( document.querySelector( '.siteBootstrapCSS' ).value === 'slate' )
 		{
 			txt += '\t<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/slate/bootstrap.min.css">\n';
+		}
+		else if ( document.querySelector( '.siteBootstrapCSS' ).value === 'solar' )
+		{
+			txt += '\t<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/solar/bootstrap.min.css">\n';
 		}
 
 		// Set Favicon
