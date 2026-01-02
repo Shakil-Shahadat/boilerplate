@@ -200,7 +200,7 @@
 			txt += qs( '.siteJavaScriptLink' ).value;
 			txt += '"></script\>\n';
 		}
-		else if ( document.querySelector( '.siteJavaScriptType' ).value === 'Internal' )
+		else if ( qs( '.siteJavaScriptType' ).value === 'Internal' )
 		{
 			txt += '<script>\n\n\t\'use strict\';\n\n\t\n\n</script\>\n';
 		}
