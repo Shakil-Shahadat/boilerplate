@@ -153,6 +153,19 @@
 		}
 	}
 
+	// Disable stylesheet link input box when needed
+	function disableStyleSheetLink()
+	{
+		if ( qs( '.siteStyleSheet' ).value === 'External' )
+		{
+			qs( '.siteStyleSheetLink' ).disabled = false;
+		}
+		else
+		{
+			qs( '.siteStyleSheetLink' ).disabled = true;
+		}
+	}
+
 	// Make the boilerplate
 	function makeBP()
 	{
@@ -253,19 +266,6 @@
 	function copyBP()
 	{
 		navigator.clipboard.writeText( qs( 'textarea' ).value );
-	}
-
-	// Disable stylesheet link input box when needed
-	function disableStyleSheetLink()
-	{
-		if ( qs( '.siteStyleSheet' ).value === 'External' )
-		{
-			qs( '.siteStyleSheetLink' ).disabled = false;
-		}
-		else
-		{
-			qs( '.siteStyleSheetLink' ).disabled = true;
-		}
 	}
 
 	function disableJavaScriptLink()
