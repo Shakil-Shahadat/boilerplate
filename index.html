@@ -166,6 +166,19 @@
 		}
 	}
 
+	// Disable JavaScript link input box when needed
+	function disableJavaScriptLink()
+	{
+		if ( qs( '.siteJavaScriptType' ).value === 'External' )
+		{
+			qs( '.siteJavaScriptLink' ).disabled = false;
+		}
+		else
+		{
+			qs( '.siteJavaScriptLink' ).disabled = true;
+		}
+	}
+
 	// Make the boilerplate
 	function makeBP()
 	{
@@ -266,19 +279,6 @@
 	function copyBP()
 	{
 		navigator.clipboard.writeText( qs( 'textarea' ).value );
-	}
-
-	// Disable JavaScript link input box when needed
-	function disableJavaScriptLink()
-	{
-		if ( qs( '.siteJavaScriptType' ).value === 'External' )
-		{
-			qs( '.siteJavaScriptLink' ).disabled = false;
-		}
-		else
-		{
-			qs( '.siteJavaScriptLink' ).disabled = true;
-		}
 	}
 
 </script>
