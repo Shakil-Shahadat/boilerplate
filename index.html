@@ -249,7 +249,7 @@
 			qs( '.siteFaviconLink' ).disabled = false;
 			qs( '.siteFaviconLink' ).value = 'src/favicon.svg';
 		}
-		else if ( document.querySelector( '.siteFaviconType' ).value === 'None' )
+		else if ( qs( '.siteFaviconType' ).value === 'None' )
 		{
 			document.querySelector( '.siteFaviconLink' ).disabled = true;
 		}
