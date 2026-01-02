@@ -161,7 +161,7 @@
 		}
 
 		// Set Style Sheet Element
-		if ( document.querySelector( '.siteStyleSheet' ).value === 'External' )
+		if ( qs( '.siteStyleSheet' ).value === 'External' )
 		{
 			txt += '\t<link rel="stylesheet" href="';
 			txt += document.querySelector( '.siteStyleSheetLink' ).value;
