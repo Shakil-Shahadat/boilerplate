@@ -234,7 +234,7 @@
 	// Disable Favicon link input box if necessary
 	function disableFaviconLink()
 	{
-		if ( document.querySelector( '.siteFaviconType' ).value === 'Icon' )
+		if ( qs( '.siteFaviconType' ).value === 'Icon' )
 		{
 			document.querySelector( '.siteFaviconLink' ).disabled = false;
 			document.querySelector( '.siteFaviconLink' ).value = 'src/favicon.ico';
