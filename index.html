@@ -197,7 +197,7 @@
 		if ( qs( '.siteJavaScriptType' ).value === 'External' )
 		{
 			txt += '<script src="';
-			txt += document.querySelector( '.siteJavaScriptLink' ).value;
+			txt += qs( '.siteJavaScriptLink' ).value;
 			txt += '"></script\>\n';
 		}
 		else if ( document.querySelector( '.siteJavaScriptType' ).value === 'Internal' )
