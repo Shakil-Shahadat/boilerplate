@@ -116,6 +116,19 @@
 		return document.querySelector( cls );
 	}
 
+	// Disable popper checkbox if Bundle in Bootstrap JavaScript is selected
+	function disablePopperCheckbox()
+	{
+		if ( qs( '.siteBootstrapJS' ).value === 'Bundle' )
+		{
+			qs( '.siteBootstrapPopper' ).disabled = 'disabled';
+		}
+		else
+		{
+			qs( '.siteBootstrapPopper' ).disabled = '';
+		}
+	}
+
 	// Make the boilerplate
 	function makeBP()
 	{
@@ -216,19 +229,6 @@
 	function copyBP()
 	{
 		navigator.clipboard.writeText( qs( 'textarea' ).value );
-	}
-
-	// Disable popper checkbox if Bundle in Bootstrap JavaScript is selected
-	function disablePopperCheckbox()
-	{
-		if ( qs( '.siteBootstrapJS' ).value === 'Bundle' )
-		{
-			qs( '.siteBootstrapPopper' ).disabled = 'disabled';
-		}
-		else
-		{
-			qs( '.siteBootstrapPopper' ).disabled = '';
-		}
 	}
 
 	function disableFaviconLink()
