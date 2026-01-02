@@ -164,7 +164,7 @@
 		if ( qs( '.siteStyleSheet' ).value === 'External' )
 		{
 			txt += '\t<link rel="stylesheet" href="';
-			txt += document.querySelector( '.siteStyleSheetLink' ).value;
+			txt += qs( '.siteStyleSheetLink' ).value;
 			txt += '">\n';
 		}
 		else if ( document.querySelector( '.siteStyleSheet' ).value === 'Internal' )
