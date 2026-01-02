@@ -132,7 +132,7 @@
 		{
 			txt += '\t<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">\n';
 		}
-		else if ( document.querySelector( '.siteBootstrapCSS' ).value !== 'None' )
+		else if ( qs( '.siteBootstrapCSS' ).value !== 'None' )
 		{
 			txt += '\t<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@';
 			txt += '5.3.8'; // Bootstrap version number. Update it whenever Bootstrap is updated.
