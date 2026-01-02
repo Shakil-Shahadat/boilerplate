@@ -221,7 +221,7 @@
 	// Disable popper checkbox if Bundle in Bootstrap JavaScript is selected
 	function disablePopperCheckbox()
 	{
-		if ( document.querySelector( '.siteBootstrapJS' ).value === 'Bundle' )
+		if ( qs( '.siteBootstrapJS' ).value === 'Bundle' )
 		{
 			document.querySelector( '.siteBootstrapPopper' ).disabled = 'disabled';
 		}
