@@ -146,17 +146,17 @@
 			txt += '\t<link rel="icon" href="';
 			txt += qs( '.siteFaviconLink' ).value; // Get favicon location
 
-			if ( qs( '.siteFaviconType' ).value === 'SVG' )
-			{
-				txt += '" type="image/svg+xml">\n';
-			}
-			else if ( qs( '.siteFaviconType' ).value === 'Icon' )
+			if ( qs( '.siteFaviconType' ).value === 'Icon' )
 			{
 				txt += '" type="image/icon">\n';
 			}
 			else if ( qs( '.siteFaviconType' ).value === 'PNG' )
 			{
 				txt += '" type="image/png">\n';
+			}
+			else if ( qs( '.siteFaviconType' ).value === 'SVG' )
+			{
+				txt += '" type="image/svg+xml">\n';
 			}
 		}
 
