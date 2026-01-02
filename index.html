@@ -129,6 +129,30 @@
 		}
 	}
 
+	// Disable Favicon link input box if necessary
+	function disableFaviconLink()
+	{
+		if ( qs( '.siteFaviconType' ).value === 'Icon' )
+		{
+			qs( '.siteFaviconLink' ).disabled = false;
+			qs( '.siteFaviconLink' ).value = 'src/favicon.ico';
+		}
+		else if ( qs( '.siteFaviconType' ).value === 'PNG' )
+		{
+			qs( '.siteFaviconLink' ).disabled = false;
+			qs( '.siteFaviconLink' ).value = 'src/favicon.png';
+		}
+		else if ( qs( '.siteFaviconType' ).value === 'SVG' )
+		{
+			qs( '.siteFaviconLink' ).disabled = false;
+			qs( '.siteFaviconLink' ).value = 'src/favicon.svg';
+		}
+		else if ( qs( '.siteFaviconType' ).value === 'None' )
+		{
+			qs( '.siteFaviconLink' ).disabled = true;
+		}
+	}
+
 	// Make the boilerplate
 	function makeBP()
 	{
@@ -229,30 +253,6 @@
 	function copyBP()
 	{
 		navigator.clipboard.writeText( qs( 'textarea' ).value );
-	}
-
-	// Disable Favicon link input box if necessary
-	function disableFaviconLink()
-	{
-		if ( qs( '.siteFaviconType' ).value === 'Icon' )
-		{
-			qs( '.siteFaviconLink' ).disabled = false;
-			qs( '.siteFaviconLink' ).value = 'src/favicon.ico';
-		}
-		else if ( qs( '.siteFaviconType' ).value === 'PNG' )
-		{
-			qs( '.siteFaviconLink' ).disabled = false;
-			qs( '.siteFaviconLink' ).value = 'src/favicon.png';
-		}
-		else if ( qs( '.siteFaviconType' ).value === 'SVG' )
-		{
-			qs( '.siteFaviconLink' ).disabled = false;
-			qs( '.siteFaviconLink' ).value = 'src/favicon.svg';
-		}
-		else if ( qs( '.siteFaviconType' ).value === 'None' )
-		{
-			qs( '.siteFaviconLink' ).disabled = true;
-		}
 	}
 
 	function disableStyleSheetLink()
