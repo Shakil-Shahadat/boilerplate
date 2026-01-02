@@ -188,7 +188,7 @@
 		}
 
 		// Set Popper
-		if ( document.querySelector( '.siteBootstrapJS' ).value !== 'Bundle' && document.querySelector( '.siteBootstrapPopper' ).checked === true )
+		if ( qs( '.siteBootstrapJS' ).value !== 'Bundle' && qs( '.siteBootstrapPopper' ).checked === true )
 		{
 			txt += '<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"><\/script>\n';
 		}
