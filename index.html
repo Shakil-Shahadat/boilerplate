@@ -144,7 +144,7 @@
 		if ( qs( '.siteFaviconType' ).value !== 'None' )
 		{
 			txt += '\t<link rel="icon" href="';
-			txt += document.querySelector( '.siteFaviconLink' ).value;
+			txt += document.querySelector( '.siteFaviconLink' ).value; // Get favicon location
 
 			if ( document.querySelector( '.siteFaviconType' ).value === 'SVG' )
 			{
