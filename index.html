@@ -244,7 +244,7 @@
 			qs( '.siteFaviconLink' ).disabled = false;
 			qs( '.siteFaviconLink' ).value = 'src/favicon.png';
 		}
-		else if ( document.querySelector( '.siteFaviconType' ).value === 'SVG' )
+		else if ( qs( '.siteFaviconType' ).value === 'SVG' )
 		{
 			document.querySelector( '.siteFaviconLink' ).disabled = false;
 			document.querySelector( '.siteFaviconLink' ).value = 'src/favicon.svg';
