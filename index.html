@@ -102,6 +102,23 @@
 			Copy
 		</button>
 
+		<div class="input-group mb-4">
+			<label class="input-group-text" for="siteFolderName">Folder Name</label>
+			<input type="text" class="form-control siteFolderName" id="siteFolderName" value="project">
+			<label class="input-group-text" for="siteFileName">File Name</label>
+			<input type="text" class="form-control siteFileName" id="siteFileName" value="index">
+			<select class="form-select siteFileExtention" id="siteFileExtention">
+				<option value="php">php</option>
+				<option value="html">html</option>
+				<option value="htm">htm</option>
+			</select>
+			<label class="input-group-text" for="siteGitRepo">Create Git Repo</label>
+			<div class="input-group-text">
+				<input class="form-check-input mt-0 siteGitRepo" id="siteGitRepo" type="checkbox">
+			</div>
+			<button class="btn btn-outline-secondary" type="button" onclick="createProject()">Create Project</button>
+		</div>
+
 		<textarea class="form-control" rows="30" cols="125"></textarea>
 
 	</div><!-- .container -->
