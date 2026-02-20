@@ -298,6 +298,34 @@
 		navigator.clipboard.writeText( qs( 'textarea' ).value );
 	}
 
+	// Create files / folders
+	function createProject()
+	{
+		// Make the boilerplate
+		makeBP();
+
+		// Prepare JSON
+		let info = {
+			folderName: qs( '.siteFolderName' ).value,
+			fileName: qs( '.siteFileName' ).value + '.' + qs( '.siteFileExtention' ).value,
+			content: qs( 'textarea' ).value,
+			CSSFile: qs( '.siteStyleSheetLink' ).disabled ? false: qs( '.siteStyleSheetLink' ).value,
+			JSFile: qs( '.siteJavaScriptLink' ).disabled ? false: qs( '.siteJavaScriptLink' ).value,
+			gitRepo: qs( '.siteGitRepo' ).checked
+		};
+
+		// Send data
+		fetch( 'post.php',
+		{
+			method: 'POST',
+			headers: { 'Content-Type' : 'application/json' },
+			body: JSON.stringify( info )
+		})
+		.then( response => response.text() )
+		.then( data => console.log( data ) )
+		.catch( error => console.error( 'Error:', error ) );
+	}
+
 </script>
 </body>
 </html>
